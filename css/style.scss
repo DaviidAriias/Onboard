@@ -1,0 +1,777 @@
+@import 'admin';
+///<reference path="_admin.scss" />
+
+/*---------------------------------------------------
+============ Main - Proyecto ============
+
+* Nombre del proyecto: Onboarding App Davivienda
+* Nombre del archivo: Style.css
+* Descripción: _____
+* Autor: Cristian David Arias
+---------------------------------------------------*/
+
+/* Main Styles - Generic */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    outline: none;
+}
+
+body{
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 0;
+    box-sizing: border-box;
+
+    background-color: #000;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+    
+    font-family: sans-serif, Arial, Arial-Narrow;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+
+//Container Main App
+.cont-main-app{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    //max-width: 850px;
+    max-width: 650px;
+    position: relative;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 0;
+    box-sizing: border-box;
+
+    background-color: #222;
+}
+
+//Landscape Alert
+.landscape-alert{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e8;
+    img{
+        display: inline-block;
+        width: 50%;
+        max-width: 170px;
+    }
+    span{
+        font-size: $font-p;
+        color: #fff;
+        font-family: $MyriadPro-Light;
+    }
+}
+
+.embed{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+//Onboarding Main App Device
+.on-boarding{
+    &.on-boarding-home{
+        background-image: url(../images/image-onboarding-background-main.jpg);
+    }
+    display: inline-block;
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 2% 5%;
+
+        background-image: url(../images/image-onboarding-header.png);
+        background-position: center top;
+        background-size: cover;
+        text-align: center;
+        img{
+            display: inline-block;
+            width: 100%;
+            max-width: 80px;
+        }
+        span{
+            display: block;
+            width: 90%;
+            font-size: $font-h - 6;
+            color: #fff;
+            font-family: $MyriadPro-Condensed-Bold;
+
+            position: relative;
+            padding-left: 15px;
+            &::after{
+                content: "";
+                width: 1.5px;
+                height: 90%;
+                position: absolute;
+                left: 8%;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .container-on-boarding{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        box-sizing: border-box;
+        h1{
+            font-family: $MyriadPro-SemiBold;
+            font-size: $font-h - 5;
+            color: #fff;
+            display: inline-block;
+            width: 90%;
+            margin: 4.5% 0;
+        }
+        .mobile-render{
+            &.render-iPhone{
+                width: 100%;
+                height: auto;
+                padding: 2% 10%;
+    
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-content: center;
+    
+                position: relative;
+                img{
+                    display: inline-block;
+                    &:nth-of-type(1){
+                        width: 65%;
+                    }
+                    &:nth-of-type(2){
+                        width: 18%;
+                        position: absolute;
+                        left: 47%;
+                        top: 58.5%;
+                    }
+                    &:nth-of-type(3){
+                        width: 20%;
+                        position: absolute;
+                        left: 68%;
+                        top: 53%;
+                    }
+                }
+            }
+            &.render-android{
+                width: 100%;
+                height: auto;
+                padding: 2% 10%;
+    
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                align-content: center;
+    
+                position: relative;
+                img{
+                    display: inline-block;
+                    &:nth-of-type(1){
+                        width: 65%;
+                    }
+                    &:nth-of-type(2){
+                        width: 12%;
+                        position: absolute;
+                        left: 57%;
+                        top: 61%;
+                    }
+                    &:nth-of-type(3){
+                        width: 17%;
+                        position: absolute;
+                        left: 73%;
+                        top: 55%;
+                    }
+                }
+            }
+        }
+        .alert-iPhone{
+            display: inline-block;
+            width: 90%;
+            font-family: $MyriadPro-Regular;
+            font-size: $font-p;
+            color: #fff;
+            margin: 2% 0;
+        }
+        a.btn-home{
+            display: inline-block;
+            width: auto;
+            max-width: 300px;
+            margin: 15px auto;
+            font-family: $MyriadPro-Regular;
+            font-size: $font-p +2; 
+            color: #fff;
+            span{
+                text-decoration: underline;
+            }
+            &.add{
+                padding: 15px 25px;
+                border-radius: 25px;
+                background-color: $rojo;
+            }
+        }
+    }
+
+    .on-boarding-modal{
+        display: inline-block;
+        width: 100%;
+        max-width: 650px;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #00000070;
+        z-index: 10;
+        .close_modal{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            width: auto;
+            height: auto;
+            background-color: $rojo;
+            border-radius: 50px;
+
+            font-size: 0;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+            position: absolute;
+            top: 25px;
+            z-index: 900;
+            transition-duration: .2s;
+            &.left{
+                left: 25px;
+            }
+            &.right{
+                right: 25px;
+            }
+            &:hover{
+                background-color: $rojo-2;
+            }
+            img{
+                display: inline-block;
+                width: 45px;
+
+                position: absolute;
+                left: -5%;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                transition-duration: .2s;
+            }
+            span{
+                display: inline-block;
+                width: auto;
+                height: auto;
+                padding: 8px 15px 5px 50px;
+
+                font-size: $font-p + 3;
+                letter-spacing: 2px;
+                vertical-align: middle;
+                color: #fff;
+                font-family: $MyriadPro-Light;
+                transition-duration: .2s;
+            }
+        }
+        .swiper-container{
+            display: block;
+            width: 100%;
+            min-height: 100vh;
+            .swiper-button-prev, .swiper-button-next{
+                width: 30px;
+                height: 60px;
+                background-size: 100% 100%;
+
+                transition-duration: .3s;
+                z-index: 90;
+                &.swiper-button-prev{
+                    background-image: url(../images/image-onboarding-arrowsld-left.png);
+                    left: 0;
+                }
+                &.swiper-button-next{
+                    background-image: url(../images/image-onboarding-arrowsld-right.png);
+                    right: 0;
+                }
+                &.swiper-button-disabled{
+                    opacity: 0;
+                }
+            }
+
+            .swiper-wrapper{
+                width: 100%;
+                min-height: 100vh;
+                .swiper-slide{
+                    width: 100%;
+                    min-height: 100vh;
+
+                    position: relative;
+                }
+            }
+
+            span{
+                display: block;
+                width: auto;
+                margin: 0 auto;
+
+                font-size: $font-h - 6;
+                font-family: $MyriadPro-Regular;
+                color: #fff;
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+                &.arrow-v{
+                    width: 40px;
+                }
+                &.arrow-h{
+                    height: 40px;
+                }
+            }
+
+            &.swiper-container-iPhone{
+                .step{
+                    display: inline-block;
+                    text-align: center;
+                    
+                    &.step-one-iPhone{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 15px;
+                        margin: auto;
+                        span{
+                            margin-bottom: 15px;
+                        }
+                    }
+                    &.step-two-iPhone{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        img{
+                            display: inline-block;
+                            width: 100%;
+                            max-width: 400px;
+    
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            z-index: -5;
+                        }
+                        .quote{
+                            display: inline-block;
+                            width: 200px;
+                            position: fixed;
+                            bottom: 0;
+                            transform: translate(-33%, -210px);
+                            img{
+                                width: 40px;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+            &.swiper-container-Android{
+                .step{
+                    position: relative;
+                    &.step-one-Android{
+                        .quote{
+                            display: inline-block;
+                            width: 200px;
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            transform: translate(-10%, 80px);
+                            img:nth-of-type(2){
+                                display: inline-block;
+                                width: 7px;
+                                float: right;
+                                margin-right: 35px;
+                                margin-top: -30px;
+                            }
+                            img:nth-of-type(1){
+                                float: right;
+                                margin-top: -60px;
+                            }
+                        }
+                    }
+                    &.step-two-Android{
+                        .quote{
+                            display: inline-block;
+                            width: 100%;
+                            max-width: 200px;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            img:nth-of-type(1){
+                                display: inline-block;
+                                width: 100%;
+                            }
+                            .quote-content{
+                                display: inline-block;
+                                width: 100%;
+
+                                position: absolute;
+                                top: 65%;
+                                right: 30%;
+                                img{
+                                    width: 40px;
+                                }
+                                span{
+                                    position: absolute;
+                                    width: 250px;
+                                    display: inline-block;
+                                    right: -10%;
+                                    top: 70px;
+                                    font-size: $font-p + 2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.form-app{
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 60px;
+}
+
+//Home App
+.home-app{
+    @extend .on-boarding;
+    background-image: url(../images/image-onboarding-background-main.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    h1{
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        line-height: .5;
+        margin-top: 5%;
+
+        font-family: $MyriadPro-Bold;
+        letter-spacing: 1px;
+        font-size: 3.5rem;
+        color: #fff;
+        strong{
+            display: inline-block;
+            width: 100%;
+
+            font-size: 1.6rem;
+            line-height: 0;
+            font-family: $MyriadPro-Light;
+        }
+    }
+    img{
+        display: inline-block;
+        width: 45%;
+        max-width: 170px;
+        margin: 13% 0;
+    }
+    span{
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+
+        font-size: 1.5rem;
+        line-height: 1;
+        font-family: $MyriadPro-Light;
+    }
+    a{
+        font-size: $font-p + 3;
+        display: inline-block;
+        width: auto;
+        padding: 8px 35px;
+        color: #fff;
+
+        margin-top: 20%;
+        background-color: $rojo;
+        border-radius: 5px;
+
+        margin-bottom: 5%;
+    }
+}
+
+//Onboarding App Home
+.on-boarding-int{
+    display: inline-block;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+    img{
+       &.appLayout{
+           display: inline-block;
+           width: 100%;
+           z-index: 1;
+           position: absolute;
+           top: 0;
+           left: 0;
+       } 
+    }
+    .swiper-on-boarding-int{
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        .close_modal{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            width: auto;
+            height: auto;
+            background-color: $rojo;
+            border-radius: 50px;
+
+            font-size: 0;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+            position: absolute;
+            top: 25px;
+            z-index: 900;
+            transition-duration: .2s;
+            &.left{
+                left: 25px;
+            }
+            &.right{
+                right: 25px;
+            }
+            &:hover{
+                background-color: $rojo-2;
+            }
+            img{
+                display: inline-block;
+                width: 45px;
+
+                position: absolute;
+                left: -5%;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                transition-duration: .2s;
+            }
+            span{
+                display: inline-block;
+                width: auto;
+                height: auto;
+                padding: 8px 15px 5px 50px;
+
+                font-size: $font-p + 3;
+                letter-spacing: 2px;
+                vertical-align: middle;
+                color: #fff;
+                font-family: $MyriadPro-Light;
+                transition-duration: .2s;
+            }
+        }
+        .swiper-button-prev, .swiper-button-next{
+            width: 30px;
+            height: 60px;
+            background-size: 100% 100%;
+
+            transition-duration: .3s;
+            z-index: 90;
+            &.swiper-button-prev{
+                background-image: url(../images/image-onboarding-arrowsld-left.png);
+                left: 0;
+            }
+            &.swiper-button-next{
+                background-image: url(../images/image-onboarding-arrowsld-right.png);
+                right: 0;
+            }
+            &.swiper-button-disabled{
+                opacity: 0;
+            }
+        }
+        img{
+            &.modalLayout{
+                display: inline-block;
+                width: 100%;
+
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                &.absolute{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                &.top{
+                    top: 0;
+                    height: auto;
+                }
+            }
+        }
+        .quote{
+            display: inline-block;
+            width: 100%;
+            max-width: 220px;
+            position: absolute;
+            bottom: 13%;
+            left: 0;
+            right: 0;
+
+            z-index: 10;
+            &.one{
+                left: 3%;
+            }
+            &.two{
+                left: 23%;
+            }
+            &.three{
+                right: 23%;
+                left: inherit;
+            }
+            &.four{
+                right: 3%;
+                left: inherit;
+            }
+            &.center{
+                margin: auto;
+                bottom: inherit;
+                right: inherit;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 60%);
+                &.center-alter{
+                    max-width: inherit;
+                    width: 85%; 
+                    transform: none;
+                    top: inherit;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+                    margin-top: 80%;
+                    span{
+                        text-align: justify;
+                        font-size: $font-p + 2;
+                    }
+                    &.two{
+                        margin-top: 115%;
+                    }
+                }
+            }
+            &.absolute{
+                bottom: inherit;
+                top: 0;
+                margin-top: 45%;
+                left: 5%;
+            }
+            img{
+                display: block;
+                width: 80%;
+                min-width: 15px;
+                max-width: 35px;
+                margin: 0 auto;
+                &.left{
+                    float: left;
+                    margin-left: 5%;
+                }
+                &.right{
+                    float: right;
+                    margin-right: 5%;
+                }
+            }
+            span{
+                display: inline-block;
+                width: 100%;
+
+                font-size: $font-p + 3;
+                font-family: $MyriadPro-Light;
+                color: #fff;
+                &.left{
+                    text-align: left;
+                }
+                &.right{
+                    text-align: right;
+                }
+                &.center{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@import 'breakpoints';

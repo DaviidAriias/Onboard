@@ -1,0 +1,232 @@
+/* -------------- Media Queries - Responsive -------------- */
+/* PC */
+@media (max-width: 91em) {
+
+}
+
+/* Laptop */
+@media (max-width: 70em) {
+
+}
+
+/* Tablet */
+@media (max-width: 64em) {
+    
+}
+
+/* Phablet */
+@media (max-width: 50em) {
+    .cont-main-app, .on-boarding-modal{
+        max-width: 100% !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 45em) {
+    .on-boarding{
+        .on-boarding-modal{
+            .close_modal{
+                img{
+                    width: 40px;
+                }
+                span{
+                    font-size: $font-p;
+                    padding: 6px 10px 4px 40px;
+                }
+            }
+        }
+    }
+
+    .swiper-container{
+        &.swiper-container-Android{
+            .step.step-one-Android{
+                .quote{
+                    img:nth-of-type(2){
+                        margin-right: 0 !important;
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+        .quote, .step{
+            .arrow-v{
+                width: 30px !important;
+            }
+            span{
+                font-size: $font-p !important;
+            }
+        }
+    }
+
+    .on-boarding-int{
+        .swiper-on-boarding-int{
+            .quote{
+                img{
+                    max-width: 25px;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile - Landscape*/
+@media (max-width: 43em) and (orientation: landscape) {
+    
+}
+
+/* -------------- Mobile Breakpoints - Responsive -------------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+@media only screen and (max-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
+
+}
+
+/* ----------- iPhone X ----------- */
+@media only screen and (max-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3){
+    
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (max-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
+    .on-boarding{
+        .container-on-boarding{
+            h1{
+                font-size: $font-h - 7;
+            }
+        }
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (max-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2){
+    .on-boarding{
+        .header{
+            span{
+                font-size: $font-h - 10;
+            }
+            img{
+                max-width: 60px;
+            }
+        }
+    }
+    
+    .on-boarding{
+        .container-on-boarding{
+            h1{
+                font-size: $font-h - 10;
+            }
+            .alert-iPhone{
+                font-size: $font-p - 5;
+            }
+            a.btn-home{
+                &.add, &.skip{
+                    font-size: $font-p - 2;
+                    padding: 15px 18px;
+                }
+                &.skip{
+                    padding: 0;
+                }
+            }
+        }
+
+        .on-boarding-modal{
+            .close_modal{
+                img{
+                    width: 40px;
+                }
+                span{
+                    font-size: $font-p;
+                    padding: 6px 10px 4px 40px;
+                }
+            }
+            .swiper-container{
+                &.swiper-container-iPhone{
+                    .step{
+                        &.step-two-iPhone{
+                            .quote{
+                                transform: translate(-35%, -168px);
+                            }
+                        }
+                    }
+                }
+                .quote, .step{
+                    .arrow-v{
+                        width: 30px !important;
+                    }
+                    span{
+                        font-size: $font-p !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-app{
+        h1{
+            font-size: 2.5rem;
+            strong{
+                font-size: 1.2rem;
+            }
+        }
+        img{
+            width: 35%;
+        }
+        span{
+            font-size: 1.2rem;
+        }
+        a{
+            font-size: $font-p;
+        }
+    }
+
+    .on-boarding-int{
+        .swiper-on-boarding-int{
+            .close_modal{
+                img{
+                    width: 40px;
+                }
+                span{
+                    font-size: $font-p;
+                    padding: 6px 10px 4px 40px;
+                }
+            }
+            img.modalLayout{
+                height: 143vh;
+            }
+            .quote{
+                bottom: 16%;
+            }
+        }
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (max-width:320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+    
+}
+
+@media (min-width: 427px) {
+    .on-boarding-int{
+        .swiper-on-boarding-int{
+            img.modalLayout{
+                height: 122vh;
+                &.top{
+                    height: 140vh;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+@media (min-width: 400px) and (min-height: 740px) {
+    .on-boarding-int{
+        .swiper-on-boarding-int{
+            img.modalLayout{
+                height: 100vh;
+            }
+        }
+    }
+}s
+
+*/

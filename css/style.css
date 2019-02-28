@@ -1,0 +1,766 @@
+@charset "UTF-8";
+/* -------------- Myriad Pro Condensed -------------- */
+@font-face {
+  font-family: 'MyriadPro-Condensed-Light';
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-LightCond.eot");
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-LightCond.eot") format("embedded-opentype"), url("fonts/Myriad-Pro-Condensed/woff2/MyriadPro-LightCond.woff2") format("woff2"), url("fonts/Myriad-Pro-Condensed/woff/MyriadPro-LightCond.woff") format("woff"), url("fonts/Myriad-Pro-Condensed/ttf/MyriadPro-LightCond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-Condensed-Regular';
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-Cond.eot");
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-Cond.eot") format("embedded-opentype"), url("fonts/Myriad-Pro-Condensed/woff2/MyriadPro-Cond.woff2") format("woff2"), url("fonts/Myriad-Pro-Condensed/woff/MyriadPro-Cond.woff") format("woff"), url("fonts/Myriad-Pro-Condensed/ttf/MyriadPro-Cond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-Condensed-SemiBold';
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-SemiboldCond.eot");
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-SemiboldCond.eot") format("embedded-opentype"), url("fonts/Myriad-Pro-Condensed/woff2/MyriadPro-SemiboldCond.woff2") format("woff2"), url("fonts/Myriad-Pro-Condensed/woff/MyriadPro-SemiboldCond.woff") format("woff"), url("fonts/Myriad-Pro-Condensed/ttf/MyriadPro-SemiboldCond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-Condensed-Bold';
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-BoldCond.eot");
+  src: url("fonts/Myriad-Pro-Condensed/eot/MyriadPro-BoldCond.eot") format("embedded-opentype"), url("fonts/Myriad-Pro-Condensed/woff2/MyriadPro-BoldCond.woff2") format("woff2"), url("fonts/Myriad-Pro-Condensed/woff/MyriadPro-BoldCond.woff") format("woff"), url("fonts/Myriad-Pro-Condensed/ttf/MyriadPro-BoldCond.ttf") format("truetype"); }
+/* -------------- Helvetica Neue Condensed -------------- */
+@font-face {
+  font-family: 'HelveticaNeue-Condensed-Thin';
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-UltraLigCond.eot");
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-UltraLigCond.eot") format("embedded-opentype"), url("fonts/Helvetica-Neue/woff2/HelveticaNeue-UltraLigCond.woff2") format("woff2"), url("fonts/Helvetica-Neue/woff/HelveticaNeue-UltraLigCond.woff") format("woff"), url("fonts/Helvetica-Neue/ttf/HelveticaNeue-UltraLigCond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeue-Condensed-Ultralight';
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-ThinCond.eot");
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-ThinCond.eot") format("embedded-opentype"), url("fonts/Helvetica-Neue/woff2/HelveticaNeue-ThinCond.woff2") format("woff2"), url("fonts/Helvetica-Neue/woff/HelveticaNeue-ThinCond.woff") format("woff"), url("fonts/Helvetica-Neue/ttf/HelveticaNeue-ThinCond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeue-Condensed-Light';
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-LightCond.eot");
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-LightCond.eot") format("embedded-opentype"), url("fonts/Helvetica-Neue/woff2/HelveticaNeue-LightCond.woff2") format("woff2"), url("fonts/Helvetica-Neue/woff/HelveticaNeue-LightCond.woff") format("woff"), url("fonts/Helvetica-Neue/ttf/HelveticaNeue-LightCond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeue-Condensed-Bold';
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-BoldCond.eot");
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-BoldCond.eot") format("embedded-opentype"), url("fonts/Helvetica-Neue/woff2/HelveticaNeue-BoldCond.woff2") format("woff2"), url("fonts/Helvetica-Neue/woff/HelveticaNeue-BoldCond.woff") format("woff"), url("fonts/Helvetica-Neue/ttf/HelveticaNeue-BoldCond.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeue-Condensed-Black';
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-BlackCond.eot");
+  src: url("fonts/Helvetica-Neue/eot/HelveticaNeue-BlackCond.eot") format("embedded-opentype"), url("fonts/Helvetica-Neue/woff2/HelveticaNeue-BlackCond.woff2") format("woff2"), url("fonts/Helvetica-Neue/woff/HelveticaNeue-BlackCond.woff") format("woff"), url("fonts/Helvetica-Neue/ttf/HelveticaNeue-BlackCond.ttf") format("truetype"); }
+/* -------------- Myriad Pro Condensed -------------- */
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Light.eot");
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Light.eot") format("embedded-opentype"), url("fonts/Myriad-Pro/woff2/MyriadPro-Light.woff2") format("woff2"), url("fonts/Myriad-Pro/woff/MyriadPro-Light.woff") format("woff"), url("fonts/Myriad-Pro/ttf/MyriadPro-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Regular.eot");
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Regular.eot") format("embedded-opentype"), url("fonts/Myriad-Pro/woff2/MyriadPro-Regular.woff2") format("woff2"), url("fonts/Myriad-Pro/woff/MyriadPro-Regular.woff") format("woff"), url("fonts/Myriad-Pro/ttf/MyriadPro-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-SemiBold';
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-SemiBold.eot");
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-SemiBold.eot") format("embedded-opentype"), url("fonts/Myriad-Pro/woff2/MyriadPro-SemiBold.woff2") format("woff2"), url("fonts/Myriad-Pro/woff/MyriadPro-SemiBold.woff") format("woff"), url("fonts/Myriad-Pro/ttf/MyriadPro-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Bold.eot");
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Bold.eot") format("embedded-opentype"), url("fonts/Myriad-Pro/woff2/MyriadPro-Bold.woff2") format("woff2"), url("fonts/Myriad-Pro/woff/MyriadPro-Bold.woff") format("woff"), url("fonts/Myriad-Pro/ttf/MyriadPro-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'MyriadPro-Black';
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Black.eot");
+  src: url("fonts/Myriad-Pro/eot/MyriadPro-Black.eot") format("embedded-opentype"), url("fonts/Myriad-Pro/woff2/MyriadPro-Black.woff2") format("woff2"), url("fonts/Myriad-Pro/woff/MyriadPro-Black.woff") format("woff"), url("fonts/Myriad-Pro/ttf/MyriadPro-Black.ttf") format("truetype"); }
+/* --------- Main Properties --------- */
+/* Tamaño Fuentes */
+/* Familia de Fuentes */
+/* Colores */
+/*---------------------------------------------------
+============ Main - Proyecto ============
+
+* Nombre del proyecto: Onboarding App Davivienda
+* Nombre del archivo: Style.css
+* Descripción: _____
+* Autor: Cristian David Arias
+---------------------------------------------------*/
+/* Main Styles - Generic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; }
+
+body {
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 0;
+  box-sizing: border-box;
+  background-color: #000; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-family: sans-serif, Arial, Arial-Narrow; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+.cont-main-app {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 0;
+  box-sizing: border-box;
+  background-color: #222; }
+
+.landscape-alert {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000e8; }
+  .landscape-alert img {
+    display: inline-block;
+    width: 50%;
+    max-width: 170px; }
+  .landscape-alert span {
+    font-size: 16px;
+    color: #fff;
+    font-family: "MyriadPro-Light", sans-serif; }
+
+.embed {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.on-boarding, .home-app {
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; }
+  .on-boarding.on-boarding-home, .on-boarding-home.home-app {
+    background-image: url(../images/image-onboarding-background-main.jpg); }
+  .on-boarding .header, .home-app .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2% 5%;
+    background-image: url(../images/image-onboarding-header.png);
+    background-position: center top;
+    background-size: cover;
+    text-align: center; }
+    .on-boarding .header img, .home-app .header img {
+      display: inline-block;
+      width: 100%;
+      max-width: 80px; }
+    .on-boarding .header span, .home-app .header span {
+      display: block;
+      width: 90%;
+      font-size: 24px;
+      color: #fff;
+      font-family: "MyriadPro-Condensed-Bold", sans-serif;
+      position: relative;
+      padding-left: 15px; }
+      .on-boarding .header span::after, .home-app .header span::after {
+        content: "";
+        width: 1.5px;
+        height: 90%;
+        position: absolute;
+        left: 8%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #fff; }
+  .on-boarding .container-on-boarding, .home-app .container-on-boarding {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    box-sizing: border-box; }
+    .on-boarding .container-on-boarding h1, .home-app .container-on-boarding h1 {
+      font-family: "MyriadPro-SemiBold", sans-serif;
+      font-size: 25px;
+      color: #fff;
+      display: inline-block;
+      width: 90%;
+      margin: 4.5% 0; }
+    .on-boarding .container-on-boarding .mobile-render.render-iPhone, .home-app .container-on-boarding .mobile-render.render-iPhone {
+      width: 100%;
+      height: auto;
+      padding: 2% 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      position: relative; }
+      .on-boarding .container-on-boarding .mobile-render.render-iPhone img, .home-app .container-on-boarding .mobile-render.render-iPhone img {
+        display: inline-block; }
+        .on-boarding .container-on-boarding .mobile-render.render-iPhone img:nth-of-type(1), .home-app .container-on-boarding .mobile-render.render-iPhone img:nth-of-type(1) {
+          width: 65%; }
+        .on-boarding .container-on-boarding .mobile-render.render-iPhone img:nth-of-type(2), .home-app .container-on-boarding .mobile-render.render-iPhone img:nth-of-type(2) {
+          width: 18%;
+          position: absolute;
+          left: 47%;
+          top: 58.5%; }
+        .on-boarding .container-on-boarding .mobile-render.render-iPhone img:nth-of-type(3), .home-app .container-on-boarding .mobile-render.render-iPhone img:nth-of-type(3) {
+          width: 20%;
+          position: absolute;
+          left: 68%;
+          top: 53%; }
+    .on-boarding .container-on-boarding .mobile-render.render-android, .home-app .container-on-boarding .mobile-render.render-android {
+      width: 100%;
+      height: auto;
+      padding: 2% 10%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      position: relative; }
+      .on-boarding .container-on-boarding .mobile-render.render-android img, .home-app .container-on-boarding .mobile-render.render-android img {
+        display: inline-block; }
+        .on-boarding .container-on-boarding .mobile-render.render-android img:nth-of-type(1), .home-app .container-on-boarding .mobile-render.render-android img:nth-of-type(1) {
+          width: 65%; }
+        .on-boarding .container-on-boarding .mobile-render.render-android img:nth-of-type(2), .home-app .container-on-boarding .mobile-render.render-android img:nth-of-type(2) {
+          width: 12%;
+          position: absolute;
+          left: 57%;
+          top: 61%; }
+        .on-boarding .container-on-boarding .mobile-render.render-android img:nth-of-type(3), .home-app .container-on-boarding .mobile-render.render-android img:nth-of-type(3) {
+          width: 17%;
+          position: absolute;
+          left: 73%;
+          top: 55%; }
+    .on-boarding .container-on-boarding .alert-iPhone, .home-app .container-on-boarding .alert-iPhone {
+      display: inline-block;
+      width: 90%;
+      font-family: "MyriadPro-Regular", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      margin: 2% 0; }
+    .on-boarding .container-on-boarding a.btn-home, .home-app .container-on-boarding a.btn-home {
+      display: inline-block;
+      width: auto;
+      max-width: 300px;
+      margin: 15px auto;
+      font-family: "MyriadPro-Regular", sans-serif;
+      font-size: 18px;
+      color: #fff; }
+      .on-boarding .container-on-boarding a.btn-home span, .home-app .container-on-boarding a.btn-home span {
+        text-decoration: underline; }
+      .on-boarding .container-on-boarding a.btn-home.add, .home-app .container-on-boarding a.btn-home.add {
+        padding: 15px 25px;
+        border-radius: 25px;
+        background-color: #dd141d; }
+  .on-boarding .on-boarding-modal, .home-app .on-boarding-modal {
+    display: inline-block;
+    width: 100%;
+    max-width: 650px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #00000070;
+    z-index: 10; }
+    .on-boarding .on-boarding-modal .close_modal, .home-app .on-boarding-modal .close_modal {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      width: auto;
+      height: auto;
+      background-color: #dd141d;
+      border-radius: 50px;
+      font-size: 0;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 25px;
+      z-index: 900;
+      transition-duration: .2s; }
+      .on-boarding .on-boarding-modal .close_modal.left, .home-app .on-boarding-modal .close_modal.left {
+        left: 25px; }
+      .on-boarding .on-boarding-modal .close_modal.right, .home-app .on-boarding-modal .close_modal.right {
+        right: 25px; }
+      .on-boarding .on-boarding-modal .close_modal:hover, .home-app .on-boarding-modal .close_modal:hover {
+        background-color: #c22a22; }
+      .on-boarding .on-boarding-modal .close_modal img, .home-app .on-boarding-modal .close_modal img {
+        display: inline-block;
+        width: 45px;
+        position: absolute;
+        left: -5%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition-duration: .2s; }
+      .on-boarding .on-boarding-modal .close_modal span, .home-app .on-boarding-modal .close_modal span {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 8px 15px 5px 50px;
+        font-size: 19px;
+        letter-spacing: 2px;
+        vertical-align: middle;
+        color: #fff;
+        font-family: "MyriadPro-Light", sans-serif;
+        transition-duration: .2s; }
+    .on-boarding .on-boarding-modal .swiper-container, .home-app .on-boarding-modal .swiper-container {
+      display: block;
+      width: 100%;
+      min-height: 100vh; }
+      .on-boarding .on-boarding-modal .swiper-container .swiper-button-prev, .home-app .on-boarding-modal .swiper-container .swiper-button-prev, .on-boarding .on-boarding-modal .swiper-container .swiper-button-next, .home-app .on-boarding-modal .swiper-container .swiper-button-next {
+        width: 30px;
+        height: 60px;
+        background-size: 100% 100%;
+        transition-duration: .3s;
+        z-index: 90; }
+        .on-boarding .on-boarding-modal .swiper-container .swiper-button-prev.swiper-button-prev, .home-app .on-boarding-modal .swiper-container .swiper-button-prev.swiper-button-prev, .on-boarding .on-boarding-modal .swiper-container .swiper-button-next.swiper-button-prev, .home-app .on-boarding-modal .swiper-container .swiper-button-next.swiper-button-prev {
+          background-image: url(../images/image-onboarding-arrowsld-left.png);
+          left: 0; }
+        .on-boarding .on-boarding-modal .swiper-container .swiper-button-prev.swiper-button-next, .home-app .on-boarding-modal .swiper-container .swiper-button-prev.swiper-button-next, .on-boarding .on-boarding-modal .swiper-container .swiper-button-next.swiper-button-next, .home-app .on-boarding-modal .swiper-container .swiper-button-next.swiper-button-next {
+          background-image: url(../images/image-onboarding-arrowsld-right.png);
+          right: 0; }
+        .on-boarding .on-boarding-modal .swiper-container .swiper-button-prev.swiper-button-disabled, .home-app .on-boarding-modal .swiper-container .swiper-button-prev.swiper-button-disabled, .on-boarding .on-boarding-modal .swiper-container .swiper-button-next.swiper-button-disabled, .home-app .on-boarding-modal .swiper-container .swiper-button-next.swiper-button-disabled {
+          opacity: 0; }
+      .on-boarding .on-boarding-modal .swiper-container .swiper-wrapper, .home-app .on-boarding-modal .swiper-container .swiper-wrapper {
+        width: 100%;
+        min-height: 100vh; }
+        .on-boarding .on-boarding-modal .swiper-container .swiper-wrapper .swiper-slide, .home-app .on-boarding-modal .swiper-container .swiper-wrapper .swiper-slide {
+          width: 100%;
+          min-height: 100vh;
+          position: relative; }
+      .on-boarding .on-boarding-modal .swiper-container span, .home-app .on-boarding-modal .swiper-container span {
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        font-size: 24px;
+        font-family: "MyriadPro-Regular", sans-serif;
+        color: #fff; }
+      .on-boarding .on-boarding-modal .swiper-container img, .home-app .on-boarding-modal .swiper-container img {
+        display: block;
+        margin: 0 auto; }
+        .on-boarding .on-boarding-modal .swiper-container img.arrow-v, .home-app .on-boarding-modal .swiper-container img.arrow-v {
+          width: 40px; }
+        .on-boarding .on-boarding-modal .swiper-container img.arrow-h, .home-app .on-boarding-modal .swiper-container img.arrow-h {
+          height: 40px; }
+      .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step {
+        display: inline-block;
+        text-align: center; }
+        .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-one-iPhone, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-one-iPhone {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          bottom: 15px;
+          margin: auto; }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-one-iPhone span, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-one-iPhone span {
+            margin-bottom: 15px; }
+        .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto; }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone img, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone img {
+            display: inline-block;
+            width: 100%;
+            max-width: 400px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: -5; }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone .quote, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone .quote {
+            display: inline-block;
+            width: 200px;
+            position: fixed;
+            bottom: 0;
+            transform: translate(-33%, -210px); }
+            .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone .quote img, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone .quote img {
+              width: 40px;
+              position: relative; }
+      .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step, .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step {
+        position: relative; }
+        .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-one-Android .quote, .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-one-Android .quote {
+          display: inline-block;
+          width: 200px;
+          position: fixed;
+          top: 0;
+          right: 0;
+          transform: translate(-10%, 80px); }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-one-Android .quote img:nth-of-type(2), .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-one-Android .quote img:nth-of-type(2) {
+            display: inline-block;
+            width: 7px;
+            float: right;
+            margin-right: 35px;
+            margin-top: -30px; }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-one-Android .quote img:nth-of-type(1), .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-one-Android .quote img:nth-of-type(1) {
+            float: right;
+            margin-top: -60px; }
+        .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote, .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote {
+          display: inline-block;
+          width: 100%;
+          max-width: 200px;
+          position: absolute;
+          top: 0;
+          right: 0; }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote img:nth-of-type(1), .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote img:nth-of-type(1) {
+            display: inline-block;
+            width: 100%; }
+          .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote .quote-content, .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote .quote-content {
+            display: inline-block;
+            width: 100%;
+            position: absolute;
+            top: 65%;
+            right: 30%; }
+            .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote .quote-content img, .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote .quote-content img {
+              width: 40px; }
+            .on-boarding .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote .quote-content span, .home-app .on-boarding-modal .swiper-container.swiper-container-Android .step.step-two-Android .quote .quote-content span {
+              position: absolute;
+              width: 250px;
+              display: inline-block;
+              right: -10%;
+              top: 70px;
+              font-size: 18px; }
+
+.form-app {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 60px; }
+
+.home-app {
+  background-image: url(../images/image-onboarding-background-main.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  .home-app h1 {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    line-height: .5;
+    margin-top: 5%;
+    font-family: "MyriadPro-Bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3.5rem;
+    color: #fff; }
+    .home-app h1 strong {
+      display: inline-block;
+      width: 100%;
+      font-size: 1.6rem;
+      line-height: 0;
+      font-family: "MyriadPro-Light", sans-serif; }
+  .home-app img {
+    display: inline-block;
+    width: 45%;
+    max-width: 170px;
+    margin: 13% 0; }
+  .home-app span {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: "MyriadPro-Light", sans-serif; }
+  .home-app a {
+    font-size: 19px;
+    display: inline-block;
+    width: auto;
+    padding: 8px 35px;
+    color: #fff;
+    margin-top: 20%;
+    background-color: #dd141d;
+    border-radius: 5px;
+    margin-bottom: 5%; }
+
+.on-boarding-int {
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  position: relative; }
+  .on-boarding-int img.appLayout {
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .on-boarding-int .swiper-on-boarding-int {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0; }
+    .on-boarding-int .swiper-on-boarding-int .close_modal {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      width: auto;
+      height: auto;
+      background-color: #dd141d;
+      border-radius: 50px;
+      font-size: 0;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 25px;
+      z-index: 900;
+      transition-duration: .2s; }
+      .on-boarding-int .swiper-on-boarding-int .close_modal.left {
+        left: 25px; }
+      .on-boarding-int .swiper-on-boarding-int .close_modal.right {
+        right: 25px; }
+      .on-boarding-int .swiper-on-boarding-int .close_modal:hover {
+        background-color: #c22a22; }
+      .on-boarding-int .swiper-on-boarding-int .close_modal img {
+        display: inline-block;
+        width: 45px;
+        position: absolute;
+        left: -5%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition-duration: .2s; }
+      .on-boarding-int .swiper-on-boarding-int .close_modal span {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 8px 15px 5px 50px;
+        font-size: 19px;
+        letter-spacing: 2px;
+        vertical-align: middle;
+        color: #fff;
+        font-family: "MyriadPro-Light", sans-serif;
+        transition-duration: .2s; }
+    .on-boarding-int .swiper-on-boarding-int .swiper-button-prev, .on-boarding-int .swiper-on-boarding-int .swiper-button-next {
+      width: 30px;
+      height: 60px;
+      background-size: 100% 100%;
+      transition-duration: .3s;
+      z-index: 90; }
+      .on-boarding-int .swiper-on-boarding-int .swiper-button-prev.swiper-button-prev, .on-boarding-int .swiper-on-boarding-int .swiper-button-next.swiper-button-prev {
+        background-image: url(../images/image-onboarding-arrowsld-left.png);
+        left: 0; }
+      .on-boarding-int .swiper-on-boarding-int .swiper-button-prev.swiper-button-next, .on-boarding-int .swiper-on-boarding-int .swiper-button-next.swiper-button-next {
+        background-image: url(../images/image-onboarding-arrowsld-right.png);
+        right: 0; }
+      .on-boarding-int .swiper-on-boarding-int .swiper-button-prev.swiper-button-disabled, .on-boarding-int .swiper-on-boarding-int .swiper-button-next.swiper-button-disabled {
+        opacity: 0; }
+    .on-boarding-int .swiper-on-boarding-int img.modalLayout {
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+      .on-boarding-int .swiper-on-boarding-int img.modalLayout.absolute {
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+      .on-boarding-int .swiper-on-boarding-int img.modalLayout.top {
+        top: 0;
+        height: auto; }
+    .on-boarding-int .swiper-on-boarding-int .quote {
+      display: inline-block;
+      width: 100%;
+      max-width: 220px;
+      position: absolute;
+      bottom: 13%;
+      left: 0;
+      right: 0;
+      z-index: 10; }
+      .on-boarding-int .swiper-on-boarding-int .quote.one {
+        left: 3%; }
+      .on-boarding-int .swiper-on-boarding-int .quote.two {
+        left: 23%; }
+      .on-boarding-int .swiper-on-boarding-int .quote.three {
+        right: 23%;
+        left: inherit; }
+      .on-boarding-int .swiper-on-boarding-int .quote.four {
+        right: 3%;
+        left: inherit; }
+      .on-boarding-int .swiper-on-boarding-int .quote.center {
+        margin: auto;
+        bottom: inherit;
+        right: inherit;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 60%); }
+        .on-boarding-int .swiper-on-boarding-int .quote.center.center-alter {
+          max-width: inherit;
+          width: 85%;
+          transform: none;
+          top: inherit;
+          right: 0;
+          left: 0;
+          margin: auto;
+          margin-top: 80%; }
+          .on-boarding-int .swiper-on-boarding-int .quote.center.center-alter span {
+            text-align: justify;
+            font-size: 18px; }
+          .on-boarding-int .swiper-on-boarding-int .quote.center.center-alter.two {
+            margin-top: 115%; }
+      .on-boarding-int .swiper-on-boarding-int .quote.absolute {
+        bottom: inherit;
+        top: 0;
+        margin-top: 45%;
+        left: 5%; }
+      .on-boarding-int .swiper-on-boarding-int .quote img {
+        display: block;
+        width: 80%;
+        min-width: 15px;
+        max-width: 35px;
+        margin: 0 auto; }
+        .on-boarding-int .swiper-on-boarding-int .quote img.left {
+          float: left;
+          margin-left: 5%; }
+        .on-boarding-int .swiper-on-boarding-int .quote img.right {
+          float: right;
+          margin-right: 5%; }
+      .on-boarding-int .swiper-on-boarding-int .quote span {
+        display: inline-block;
+        width: 100%;
+        font-size: 19px;
+        font-family: "MyriadPro-Light", sans-serif;
+        color: #fff; }
+        .on-boarding-int .swiper-on-boarding-int .quote span.left {
+          text-align: left; }
+        .on-boarding-int .swiper-on-boarding-int .quote span.right {
+          text-align: right; }
+        .on-boarding-int .swiper-on-boarding-int .quote span.center {
+          text-align: center; }
+
+/* -------------- Media Queries - Responsive -------------- */
+/* PC */
+/* Laptop */
+/* Tablet */
+/* Phablet */
+@media (max-width: 50em) {
+  .cont-main-app, .on-boarding-modal {
+    max-width: 100% !important; } }
+/* Mobile */
+@media (max-width: 45em) {
+  .on-boarding .on-boarding-modal .close_modal img, .home-app .on-boarding-modal .close_modal img {
+    width: 40px; }
+  .on-boarding .on-boarding-modal .close_modal span, .home-app .on-boarding-modal .close_modal span {
+    font-size: 16px;
+    padding: 6px 10px 4px 40px; }
+
+  .swiper-container.swiper-container-Android .step.step-one-Android .quote img:nth-of-type(2) {
+    margin-right: 0 !important;
+    margin-top: 0 !important; }
+  .swiper-container .quote .arrow-v, .swiper-container .step .arrow-v {
+    width: 30px !important; }
+  .swiper-container .quote span, .swiper-container .step span {
+    font-size: 16px !important; }
+
+  .on-boarding-int .swiper-on-boarding-int .quote img {
+    max-width: 25px; } }
+/* Mobile - Landscape*/
+/* -------------- Mobile Breakpoints - Responsive -------------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* ----------- iPhone X ----------- */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media only screen and (max-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .on-boarding .container-on-boarding h1, .home-app .container-on-boarding h1 {
+    font-size: 23px; } }
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+@media only screen and (max-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .on-boarding .header span, .home-app .header span {
+    font-size: 20px; }
+  .on-boarding .header img, .home-app .header img {
+    max-width: 60px; }
+
+  .on-boarding .container-on-boarding h1, .home-app .container-on-boarding h1 {
+    font-size: 20px; }
+  .on-boarding .container-on-boarding .alert-iPhone, .home-app .container-on-boarding .alert-iPhone {
+    font-size: 11px; }
+  .on-boarding .container-on-boarding a.btn-home.add, .home-app .container-on-boarding a.btn-home.add, .on-boarding .container-on-boarding a.btn-home.skip, .home-app .container-on-boarding a.btn-home.skip {
+    font-size: 14px;
+    padding: 15px 18px; }
+  .on-boarding .container-on-boarding a.btn-home.skip, .home-app .container-on-boarding a.btn-home.skip {
+    padding: 0; }
+  .on-boarding .on-boarding-modal .close_modal img, .home-app .on-boarding-modal .close_modal img {
+    width: 40px; }
+  .on-boarding .on-boarding-modal .close_modal span, .home-app .on-boarding-modal .close_modal span {
+    font-size: 16px;
+    padding: 6px 10px 4px 40px; }
+  .on-boarding .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone .quote, .home-app .on-boarding-modal .swiper-container.swiper-container-iPhone .step.step-two-iPhone .quote {
+    transform: translate(-35%, -168px); }
+  .on-boarding .on-boarding-modal .swiper-container .quote .arrow-v, .home-app .on-boarding-modal .swiper-container .quote .arrow-v, .on-boarding .on-boarding-modal .swiper-container .step .arrow-v, .home-app .on-boarding-modal .swiper-container .step .arrow-v {
+    width: 30px !important; }
+  .on-boarding .on-boarding-modal .swiper-container .quote span, .home-app .on-boarding-modal .swiper-container .quote span, .on-boarding .on-boarding-modal .swiper-container .step span, .home-app .on-boarding-modal .swiper-container .step span {
+    font-size: 16px !important; }
+
+  .home-app h1 {
+    font-size: 2.5rem; }
+    .home-app h1 strong {
+      font-size: 1.2rem; }
+  .home-app img {
+    width: 35%; }
+  .home-app span {
+    font-size: 1.2rem; }
+  .home-app a {
+    font-size: 16px; }
+
+  .on-boarding-int .swiper-on-boarding-int .close_modal img {
+    width: 40px; }
+  .on-boarding-int .swiper-on-boarding-int .close_modal span {
+    font-size: 16px;
+    padding: 6px 10px 4px 40px; }
+  .on-boarding-int .swiper-on-boarding-int img.modalLayout {
+    height: 143vh; }
+  .on-boarding-int .swiper-on-boarding-int .quote {
+    bottom: 16%; } }
+/* ----------- iPhone 4 and 4S ----------- */
+@media (min-width: 427px) {
+  .on-boarding-int .swiper-on-boarding-int img.modalLayout {
+    height: 122vh; }
+    .on-boarding-int .swiper-on-boarding-int img.modalLayout.top {
+      height: 140vh; } }
+/*
+@media (min-width: 400px) and (min-height: 740px) {
+    .on-boarding-int{
+        .swiper-on-boarding-int{
+            img.modalLayout{
+                height: 100vh;
+            }
+        }
+    }
+}s
+
+*/
+
+/*# sourceMappingURL=style.css.map */

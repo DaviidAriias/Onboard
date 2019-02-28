@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="https://www.davivienda.com/PersonasDaviviendaNewTheme/images/faviconDav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="js/utils/SwiperJS/swiper.min.css">
+    <link rel="stylesheet" href="js/utils/AnimateCSS/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> App inversiones | Davivienda S.A. </title>
+</head>
+
+<body>
+    <div class="cont-main-app">
+        <div class="landscape-alert">
+            <img src="images/image-onboarding-rotate-screen-icon.gif" alt="Rotate Mobile">
+            <span>Por favor gira el dispositivo.</span>
+        </div>
+        <div class="on-boarding on-boarding-home">
+            <div class="header">
+                <img src="images/image-onboarding-icon-small.png" alt="App Inversiones Davivienda">
+                <span>
+                    Bienvenido a <br> Inversiones Davivienda
+                </span>
+            </div>
+            <div class="container-on-boarding">
+                <h1>Acceda a través de un ícono que estará en el menú de su celular.</h1>
+                <div class="mobile-render render-iPhone" style="display: flex;">
+                    <!--<img src="images/image-onboarding-iphone.png" alt="iPhone">-->
+                    <img src="images/image-onboarding-iphone.gif" alt="iPhone">
+                    <img src="images/image-onboarding-arrow-main.png" alt="Arrow Main">
+                    <img src="images/image-onboarding-icon-small.png" alt="App Inversiones Davivienda">
+                </div>
+                <div class="mobile-render render-android" style="display: flex;">
+                    <img src="images/image-onboarding-android-alter.gif" alt="Android">
+                    <!--<img src="images/image-onboarding-android.png" alt="Android">-->
+                    <img src="images/image-onboarding-arrow-main.png" alt="Arrow Main">
+                    <img src="images/image-onboarding-icon-small.png" alt="App Inversiones Davivienda">
+                </div>
+                <span class="alert-iPhone">
+                    Tenga en cuenta que para poder realizar esta acción debe hacerlo desde el navegador Safari.
+                </span>
+                <a href="javascript:void(0)" class="btn-home add">Agregue el ícono a su celular</a> <br>
+                <a href="javascript:void(0)" class="btn-home skip">o <span>continúe con la página</span>.</a>
+            </div>
+            <div class="on-boarding-modal on-boarding-modal-iPhone iPhone" style="visibility: hidden;">
+                <a href="javascript:void(0)" class="close_modal right"><img src="images/image-onboarding-close.png"
+                        alt="Cerrar"><span>Cerrar</span>
+                </a>
+                <div class="swiper-container swiper-container-iPhone">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="step step-one-iPhone">
+                                <span data-swiper-parallax="-400">Ingrese al menú <br> de opciones.</span>
+                                <img src="images/image-onboarding-arrow-main-down.png" class="arrow-v" data-swiper-parallax="-300" alt="Arrow">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="step step-two-iPhone">
+                                <img src="images/image-onboarding-menu-iPhone.png" class="menu" data-swiper-parallax="-600" alt="Menú iPhone">
+                                <div class="quote">
+                                    <span data-swiper-parallax="-400">Luego haga clic en <br> “Agregar al inicio”</span>
+                                    <img src="images/image-onboarding-arrow-main-down.png" class="arrow-v" alt="Arrow">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Arrows Swiper -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="on-boarding-modal on-boarding-modal-Android Android" style="visibility: hidden;">
+                    <a href="javascript:void(0)" class="close_modal left"><img src="images/image-onboarding-close.png" alt="Cerrar"><span>Cerrar</span></a>
+                    <div class="swiper-container swiper-container-Android">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="step step-one-Android">
+                                    <div class="quote">
+                                        <img src="images/image-onboarding-arrow-main-up.png" class="arrow-v" data-swiper-parallax="-500" alt="Arrow">
+                                        <span data-swiper-parallax="-400">Ingrese al menú de opciones</span>
+                                        <img src="images/image-onboarding-menudots.png" data-swiper-parallax="-400" alt="Dots">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="step step-two-Android">
+                                    <div class="quote">
+                                        <img src="images/image-onboarding-menu-android.png" alt="Menu Android">
+                                        <div class="quote-content">
+                                            <img src="images/image-onboarding-arrow-main-up.png" class="arrow-v" data-swiper-parallax="-400" alt="Arrow">
+                                            <span data-swiper-parallax="">Haga clic en la opción “Agregar a <br> la pantalla principal”</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Arrows Swiper -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/utils/SwiperJS/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
